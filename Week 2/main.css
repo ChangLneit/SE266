@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+#content {
+    width: 650px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    background: white;
+    border: 2px solid navy;
+}
+.error{
+	font-weight: bold;
+	color: red;
+}
+h1 {
+    color: navy;
+	
+}
+label {
+    width: 10em;
+    padding-right: 1em;
+	font-weight: bold;
+    float: left;
+}
+#data input {
+    float: left;
+    width: 15em;
+    margin-bottom: .5em;
+}
+#data input:focus {
+   font-size:25px;
+   font-weight: bold;
+}
+
+#buttons input {
+    float: left;
+    margin-bottom: .5em;
+	margin-top: 1em;
+	height: 30px;
+	width: 100px;
+}
+#buttons input:hover {
+    background-color: purple;
+	
+	font-weight: bold;
+}
+br {
+    clear: left;
+}
