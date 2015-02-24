@@ -19,17 +19,37 @@ switch ($action) {
         $number3 = $_POST['number3'];
 
         // make sure the user enters three numbers
-
+		if (empty($number1)){
+			$message = "You must enter number1";
+			break;
+		}else if (empty($number2)){
+			$message = "You must enter number2";
+			break;
+		}else if (empty($number3)){
+			$message = "You must enter number3";
+			break;
+		}
         // make sure the numbers are valid
-
+		if(!is_numeric($number1)) {
+			$message = "Number1 Must be numeric!";
+			break;
+		}else if(!is_numeric($number2)) {
+			$message = "Number2 Must be numeric!";
+			break;
+		}else if(!is_numeric($number3)) {
+			$message = "Number3 Must be numeric!";
+			break;
+		}
         // get the ceiling and floor for $number2
-
+		$number2_ceil = ceil($number2);
+		$number2_floor = floor($number2);
         // round $number3 to 3 decimal places
-
+		$number3_rounded = round($number3, 3);
         // get the max and min values of all three numbers
-
+		$min = min($number1, $number2, $number3);
+		$max = max($number1, $number2, $number3);
         // generate a random integer between 1 and 100
-
+		$random = mt_rand(1,100);
         // format the message
         $message =
             "Number 1: $number1\n" .

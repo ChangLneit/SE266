@@ -9,7 +9,7 @@
 <body>
     <div id="content">
         <h1>Number Tester</h1>
-        <form action="." method="post">
+        <form action="#" method="post">
         <input type="hidden" name="action" value="process_data"/>
 
         <label>Number 1:</label>

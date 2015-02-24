@@ -9,7 +9,7 @@
 <body>
     <div id="content">
         <h1>Date Tester</h1>
-        <form action="." method="post">
+        <form action="#" method="post">
         <input type="hidden" name="action" value="process_data"/>
 
         <label>Invoice Date:</label>
