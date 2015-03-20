@@ -13,7 +13,28 @@ switch ($action) {
         $name = $_POST['name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
-
+		
+		// for the heard_from radio buttons,
+    	// display a value of 'Unknown' if the user doesn't select a radio button
+		if(isset($_POST['heard_from'])){
+			$heard_from = $_POST['heard_from'];
+		}else{
+			$heard_from = "unknown";
+		}
+    	// for the wants_updates check box,
+    	// display a value of 'Yes' or 'No'
+		if (isset($_POST['wants_updates'])){
+			$wants_updates = "Yes";
+		}else{
+			$wants_updates = "No";
+		}
+		// for the dropdown list
+		$contact_via=$_POST['contact_via'];
+		// for the comment
+		$comments = $_POST['comments'];
+		$comments = nl2br($comments, false);
+		$comments = htmlspecialchars($comments);
+	
         /*************************************************
          * validate and process the name
 		 
@@ -92,6 +113,7 @@ switch ($action) {
             "Name: $name\n" .
             "Email: $email\n" .
             "Phone: $phone\n";
+			
 
 		
         break;

@@ -5,7 +5,7 @@
     <head>
         <title>My Guitar Shop</title>
         <link rel="stylesheet" type="text/css"
-              href="/ex_starts/ch14_ex1/main.css" />
+              href="/book_apps/ch05_guitar_shop/main.css" />
     </head>
 
     <!-- the body section -->

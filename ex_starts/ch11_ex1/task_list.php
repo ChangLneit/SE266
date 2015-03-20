@@ -37,7 +37,7 @@
 
     <!-- part 3: the add form -->
     <h2>Add Task:</h2>
-    <form action="." method="post" >
+    <form action="#" method="post" >
         <?php foreach( $task_list as $task ) : ?>
           <input type="hidden" name="tasklist[]" value="<?php echo $task; ?>"/>
         <?php endforeach; ?>
@@ -51,7 +51,7 @@
     <!-- part 4: the modify/promote/delete form -->
     <?php if (count($task_list) > 0 && empty($task_to_modify)) : ?>
     <h2>Select Task:</h2>
-    <form action="." method="post" >
+    <form action="#" method="post" >
         <?php foreach( $task_list as $task ) : ?>
           <input type="hidden" name="tasklist[]" value="<?php echo $task; ?>"/>
         <?php endforeach; ?>
@@ -78,7 +78,7 @@
     <!-- part 5: the modify save/cancel form -->
     <?php if (!empty($task_to_modify)) : ?>
     <h2>Task to Modify:</h2>
-    <form action="." method="post" >
+    <form action="#" method="post" >
         <?php foreach( $task_list as $task ) : ?>
           <input type="hidden" name="tasklist[]" value="<?php echo $task; ?>"/>
         <?php endforeach; ?>

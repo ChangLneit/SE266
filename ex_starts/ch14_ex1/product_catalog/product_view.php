@@ -14,7 +14,7 @@
         </ul>
     </div>
     <div id="content">
-        <h1><?php echo $product->getName(); ?></h1>
+        <h1 class="top"><?php echo $product->getName(); ?></h1>
         <div id="left_column">
             <p>
                 <img src="<?php echo $product->getImagePath(); ?>"
@@ -23,7 +23,7 @@
         </div>
 
         <div id="right_column">
-            <p><b>List Price:</b> $<?php echo $product->getPriceFormatted(); ?></p>
+            <p><b>List Price:</b> $<?php echo $product->getPrice(); ?></p>
             <p><b>Discount:</b> <?php echo $product->getDiscountPercent(); ?>%</p>
             <p><b>Your Price:</b> $<?php echo $product->getDiscountPrice(); ?>
                  (You save $<?php echo $product->getDiscountAmount(); ?>)</p>

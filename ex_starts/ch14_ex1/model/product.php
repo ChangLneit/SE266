@@ -2,11 +2,12 @@
 class Product {
     private $category, $id, $code, $name, $price;
 
-    public function __construct($category, $code, $name, $price) {
-        $this->category = $category;
-        $this->code = $code;
-        $this->name = $name;
-        $this->price = $price;
+    public function __construct() {
+        $this->category = null;
+        $this->id = 0;
+        $this->name = '';
+        $this->description = '';
+        $this->price = 0;
     }
 
     public function getCategory() {
@@ -42,10 +43,6 @@ class Product {
     }
 
     public function getPrice() {
-        return $this->price;
-    }
-
-    public function getPriceFormatted() {
         $formatted_price = number_format($this->price, 2);
         return $formatted_price;
     }

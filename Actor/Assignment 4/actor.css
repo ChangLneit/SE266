@@ -1,0 +1,37 @@
+body {
+    font-family:Poor Richard;
+	font-size: 19px;
+	width: 600px;
+	
+}
+h5{
+	color:red;
+}
+th, td{
+	text-align:left;
+	margin: 0;
+	border-top: 2px solid black;
+	border-bottom:2px solid black;
+	padding: 3px;
+	border-right:2px solid black;
+	border-left:2px solid black;
+}
+fieldset{
+	width:360px;
+}
+.btn{
+	width:130px;
+	height:25px;
+	
+	color:black;
+	font-weight:bold;
+	border: 2px solid #DEB887;
+	border-radius: 20px;
+		
+}
+.btn:hover{
+	background-color: purple;
+}
+br {
+    clear: both;
+}

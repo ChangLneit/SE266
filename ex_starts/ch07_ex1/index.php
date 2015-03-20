@@ -51,11 +51,10 @@
         <p>Comments:</p>
         <textarea name="comments" rows="4" cols="50"></textarea>
     </fieldset>
-
     <input type="submit" value="Submit" />
-
     </form>
     <br />
+    
     </div>
 </body>
 </html>

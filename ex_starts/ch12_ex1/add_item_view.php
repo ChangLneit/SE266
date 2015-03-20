@@ -13,7 +13,7 @@
         <div id="main">
 
             <h1>Add Item</h1>
-            <form action="." method="post">
+            <form action="#" method="post">
                 <input type="hidden" name="action" value="add"/>
                 
                 <label>Name:</label>
@@ -42,7 +42,8 @@
                 <input type="submit" value="Add Item"/>
             </form>
             <p><a href=".?action=show_cart">View Cart</a></p>
-    
+            <p>Session ID: <?php echo session_id(); ?></p>
+
         </div><!-- end main -->
     </div><!-- end page -->
 </body>

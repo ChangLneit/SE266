@@ -5,6 +5,10 @@ require('../model/category_db.php');
 require('../model/product.php');
 require('../model/product_db.php');
 
+// create the CategoryDB and ProductDB objects
+$categoryDB = new CategoryDB();
+$productDB = new ProductDB();
+
 if (isset($_POST['action'])) {
     $action = $_POST['action'];
 } else if (isset($_GET['action'])) {
@@ -19,16 +23,17 @@ if ($action == 'list_products') {
         $category_id = 1;
     }
 
-    $current_category = CategoryDB::getCategory($category_id);
-    $categories = CategoryDB::getCategories();
-    $products = ProductDB::getProductsByCategory($category_id);
+    // Get product and category data
+    $current_category = $categoryDB->getCategory($category_id);
+    $categories = $categoryDB->getCategories();
+    $products = $productDB->getProductsByCategory($category_id);
 
     include('product_list.php');
 } else if ($action == 'view_product') {
-    $categories = CategoryDB::getCategories();
+    $categories = $categoryDB->getCategories();
 
     $product_id = $_GET['product_id'];
-    $product = ProductDB::getProduct($product_id);
+    $product = $productDB->getProduct($product_id);
 
     include('product_view.php');
 }

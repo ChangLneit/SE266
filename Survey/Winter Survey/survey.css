@@ -1,0 +1,69 @@
+body {
+    font-family:Poor Richard, Helvetica;
+	font-size: 20px;
+	letter-spacing:1px;
+	
+}
+#content {
+   	width: 650px;
+	
+    margin: 0 auto;
+    padding: 20px 20px 30px;
+    background: #DEB887;
+  
+}
+label{
+	font-weight: bold;
+}
+.question{
+	height:100px;
+	margin-bottom:15px;
+}
+.questions{
+	margin-top:20px;
+	height:60px;
+}
+h1 {
+	text-align:center;
+    color: black;
+	
+}
+h4 {
+    margin-top:-10px;
+	margin-bottom:15px;
+    padding: .25em 0;
+	color:red;
+}
+
+p {
+    margin: 0;
+	font-weight:bold;
+}
+label {
+    width: 8em;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: .25em;
+}
+
+input {
+    float: left;
+    margin-bottom: .2em;
+}
+#btn{
+	width:180px;
+	height:45px;
+	margin-left:220px;
+	margin-top:10px;
+	color:black;
+	font-weight:bold;
+	border: 2px solid #DEB887;
+	border-radius: 20px;
+		
+}
+#btn:hover{
+	background-color: purple;
+}
+br {
+    clear: both;
+}

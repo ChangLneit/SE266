@@ -1,30 +1,26 @@
 <?php
     // get the data from the form
     $email = $_POST['email'];
-	
-    // get the rest of the data for the form
-	$password = $_POST['password'];
-	$phone = $_POST['phone'];
-    // for the heard_from radio buttons,
-    // display a value of 'Unknown' if the user doesn't select a radio button
-	if(isset($_POST['heard_from'])){
-		$heard_from = $_POST['heard_from'];
-	}else{
-		$heard_from = "unknown";
-	}
-    // for the wants_updates check box,
-    // display a value of 'Yes' or 'No'
-	if (isset($_POST['wants_updates'])){
-		$wants_updates = "Yes";
-	}else{
-		$wants_updates = "No";
-	}
-	// for the dropdown list
-	$contact_via=$_POST['contact_via'];
-	// for the comment
-	$comments = $_POST['comments'];
-	$comments = nl2br($comments, false);
-	$comments = htmlspecialchars($comments);
+    $password = $_POST['password'];
+    $phone = $_POST['phone'];
+
+    if (isset($_POST['heard_from'])) {
+        $heard_from = $_POST['heard_from'];
+    } else {
+        $heard_from = 'Unknown';
+    }
+
+    if (isset($_POST['wants_updates'])) {
+        $wants_updates = 'Yes';
+    } else {
+        $wants_updates = 'No';
+    }
+
+    $contact_via = $_POST['contact_via'];
+
+    $comments = $_POST['comments'];
+    $comments = htmlspecialchars($comments);
+    $comments = nl2br($comments, false);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -41,7 +37,7 @@
         <span><?php echo htmlspecialchars($email); ?></span><br />
 
         <label>Password:</label>
-        <span><?php echo htmlspecialchars($password);?></span><br />
+        <span><?php echo htmlspecialchars($password); ?></span><br />
 
         <label>Phone Number:</label>
         <span><?php echo htmlspecialchars($phone); ?></span><br />

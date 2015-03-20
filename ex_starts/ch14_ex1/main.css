@@ -115,7 +115,6 @@ br {
     font-size: 80%;
     margin: 1em 0;
 }
-
 .right {
     text-align: right;
 }
@@ -134,7 +133,4 @@ br {
 }
 #add_product_form input {
     float: left;
-}
-#add_product_form input[text] {
-    width: 25em;
 }

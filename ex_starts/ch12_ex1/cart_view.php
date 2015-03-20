@@ -16,7 +16,7 @@
             <?php if (count($_SESSION['cart12']) == 0) : ?>
                 <p>There are no items in your cart.</p>
             <?php else: ?>
-                <form action="." method="post">
+                <form action="#" method="post">
                 <input type="hidden" name="action" value="update"/>
                 <table>
                     <tr id="cart_header">
@@ -63,7 +63,8 @@
             <?php endif; ?>
             <p><a href=".?action=show_add_item">Add Item</a></p>
             <p><a href=".?action=empty_cart">Empty Cart</a></p>
-
+            <p><a href=".?action=end_session">End Session and Delete Cookie</a></p>
+            <p>Session ID: <?php echo session_id(); ?></p>
         </div><!-- end main -->
     </div><!-- end page -->
 </body>

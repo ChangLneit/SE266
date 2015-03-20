@@ -14,7 +14,7 @@
         </ul>
     </div>
     <div id="content">
-        <h1><?php echo $current_category->getName(); ?></h1>
+        <h1 class="top"><?php echo $current_category->getName(); ?></h1>
         <ul class="nav">
             <?php foreach ($products as $product) : ?>
             <li>

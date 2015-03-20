@@ -10,7 +10,7 @@
     <div id="content">
         <h1>Invoice Total Calculator</h1>
         <p>Enter the values below and click "Calculate".</p>
-        <form action="." method="post">
+        <form action="#" method="post">
             <div id="data" >
             <label>Customer Type:</label>
             <input type="text" name="type" 

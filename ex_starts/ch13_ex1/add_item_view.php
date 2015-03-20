@@ -13,7 +13,7 @@
             <div id="main">
 
 <h2>Add Item</h2>
-<form action="." method="post" class="aligned">
+<form action="#" method="post" >
     <input type="hidden" name="action" value="add"/>
 
     <label>Name:</label>
